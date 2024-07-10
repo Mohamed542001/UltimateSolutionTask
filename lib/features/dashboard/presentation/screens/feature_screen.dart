@@ -1,8 +1,6 @@
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:ultimate_solution_task/features/dashboard/cubit/dashboard_cubit.dart';
 import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/build_bottom_tables.dart';
 import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/build_calendar_view.dart';
-import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/dashboard_table.dart';
 import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/hover.dart';
 import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/map_and_table_view.dart';
 import 'package:ultimate_solution_task/features/dashboard/presentation/screens/widgets/segmentation_and_revenue_view.dart';
@@ -61,7 +59,7 @@ class _FeatureScreenState extends State<FeatureScreen> {
                   ),
 
                   SizedBox(
-                    height: screenWidth < 1100 ?830 : 430,
+                    height: screenWidth < 1100 ?830 : 440,
                     width: double.infinity,
                     child: const SegmentationAndRevenueView(),
                   ),
