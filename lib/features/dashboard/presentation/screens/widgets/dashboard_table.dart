@@ -10,8 +10,7 @@ class DashboardTable extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     return BuildCardView(view: Column(
       children: [
-
-        screenWidth<600?SingleChildScrollView(
+        SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: SizedBox(
             width: 500,
@@ -23,12 +22,6 @@ class DashboardTable extends StatelessWidget {
               children: tableRows,
             ),
           ),
-        ):Table(
-          border: const TableBorder.symmetric(
-            inside: BorderSide.none,
-            outside: BorderSide.none,
-          ),
-          children: tableRows,
         ),
         bottomWidget??const SizedBox.shrink()
       ],
